@@ -1,0 +1,107 @@
+[0.367s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.367s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f22924d5a20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f22925efb20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f22925efb20>>)
+[0.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.411s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/prime/dev_ws/src/prime_bot'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.432s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'prime_bot'
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.466s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/prime/dev_ws/install
+[0.468s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/prime/ydlidar_ros2_driver-master/install
+[0.469s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/prime/workspaces/aibot_ws/install
+[0.471s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/prime/workspaces/turtlebot3_ws/install
+[0.473s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 343 installed packages in /opt/ros/humble
+[0.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'cmake_args' from command line to 'None'
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'cmake_target' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'prime_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.559s] DEBUG:colcon.colcon_core.verb:Building package 'prime_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/prime/dev_ws/src/prime_bot/build/prime_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/prime/dev_ws/src/prime_bot/install/prime_bot', 'merge_install': False, 'path': '/home/prime/dev_ws/src/prime_bot', 'symlink_install': True, 'test_result_base': None}
+[0.560s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.567s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/prime/dev_ws/src/prime_bot' with build type 'ament_cmake'
+[0.567s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/prime/dev_ws/src/prime_bot'
+[0.575s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.576s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.576s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prime/dev_ws/src/prime_bot/build/prime_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prime/workspaces/aibot_ws/install/ai_bot_pkg:/opt/ros/humble /usr/bin/cmake /home/prime/dev_ws/src/prime_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/prime/dev_ws/src/prime_bot/install/prime_bot
+[3.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prime/dev_ws/src/prime_bot/build/prime_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prime/workspaces/aibot_ws/install/ai_bot_pkg:/opt/ros/humble /usr/bin/cmake /home/prime/dev_ws/src/prime_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/prime/dev_ws/src/prime_bot/install/prime_bot
+[3.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prime/dev_ws/src/prime_bot/build/prime_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prime/workspaces/aibot_ws/install/ai_bot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prime/dev_ws/src/prime_bot/build/prime_bot -- -j4 -l4
+[3.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prime/dev_ws/src/prime_bot/build/prime_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prime/workspaces/aibot_ws/install/ai_bot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prime/dev_ws/src/prime_bot/build/prime_bot -- -j4 -l4
+[3.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prime/dev_ws/src/prime_bot/build/prime_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prime/workspaces/aibot_ws/install/ai_bot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prime/dev_ws/src/prime_bot/build/prime_bot
+[3.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prime_bot)
+[3.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prime/dev_ws/src/prime_bot/build/prime_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prime/workspaces/aibot_ws/install/ai_bot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prime/dev_ws/src/prime_bot/build/prime_bot
+[3.834s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot' for CMake module files
+[3.835s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot' for CMake config files
+[3.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('prime_bot', 'cmake_prefix_path')
+[3.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/hook/cmake_prefix_path.ps1'
+[3.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/hook/cmake_prefix_path.dsv'
+[3.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/hook/cmake_prefix_path.sh'
+[3.841s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/bin'
+[3.841s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/lib/pkgconfig/prime_bot.pc'
+[3.842s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/lib/python3.10/site-packages'
+[3.842s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/bin'
+[3.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.ps1'
+[3.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.dsv'
+[3.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.sh'
+[3.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.bash'
+[3.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.zsh'
+[3.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/colcon-core/packages/prime_bot)
+[3.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prime_bot)
+[3.884s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot' for CMake module files
+[3.885s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot' for CMake config files
+[3.886s] Level 1:colcon.colcon_core.shell:create_environment_hook('prime_bot', 'cmake_prefix_path')
+[3.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/hook/cmake_prefix_path.ps1'
+[3.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/hook/cmake_prefix_path.dsv'
+[3.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/hook/cmake_prefix_path.sh'
+[3.890s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/bin'
+[3.891s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/lib/pkgconfig/prime_bot.pc'
+[3.891s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/lib/python3.10/site-packages'
+[3.892s] Level 1:colcon.colcon_core.environment:checking '/home/prime/dev_ws/src/prime_bot/install/prime_bot/bin'
+[3.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.ps1'
+[3.895s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.dsv'
+[3.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.sh'
+[3.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.bash'
+[3.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/prime_bot/package.zsh'
+[3.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/prime/dev_ws/src/prime_bot/install/prime_bot/share/colcon-core/packages/prime_bot)
+[3.898s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.899s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.899s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.899s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.908s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.908s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.908s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.924s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.928s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prime/dev_ws/src/prime_bot/install/local_setup.ps1'
+[3.929s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prime/dev_ws/src/prime_bot/install/_local_setup_util_ps1.py'
+[3.931s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prime/dev_ws/src/prime_bot/install/setup.ps1'
+[3.934s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prime/dev_ws/src/prime_bot/install/local_setup.sh'
+[3.935s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prime/dev_ws/src/prime_bot/install/_local_setup_util_sh.py'
+[3.936s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prime/dev_ws/src/prime_bot/install/setup.sh'
+[3.938s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prime/dev_ws/src/prime_bot/install/local_setup.bash'
+[3.939s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prime/dev_ws/src/prime_bot/install/setup.bash'
+[3.942s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prime/dev_ws/src/prime_bot/install/local_setup.zsh'
+[3.943s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prime/dev_ws/src/prime_bot/install/setup.zsh'

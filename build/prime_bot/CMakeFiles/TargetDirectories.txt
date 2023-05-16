@@ -1,0 +1,9 @@
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/uninstall.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/prime_bot_uninstall.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/test.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/edit_cache.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/rebuild_cache.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/list_install_components.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/install.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/install/local.dir
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/CMakeFiles/install/strip.dir

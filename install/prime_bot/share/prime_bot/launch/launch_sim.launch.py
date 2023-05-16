@@ -1,0 +1,1 @@
+/home/prime/dev_ws/src/prime_bot/launch/launch_sim.launch.py

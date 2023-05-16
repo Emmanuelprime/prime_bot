@@ -1,0 +1,1 @@
+/home/prime/dev_ws/src/prime_bot/build/prime_bot/ament_cmake_core/prime_botConfig.cmake
