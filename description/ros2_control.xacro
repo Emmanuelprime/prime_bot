@@ -32,7 +32,7 @@
         </ros2_control>
     </xacro:unless>
 
-   < <xacro:if value="$(arg sim_mode)">
+    <xacro:if value="$(arg sim_mode)">
         <ros2_control name="GazeboSystem" type="system">
             <hardware>
                 <plugin>gazebo_ros2_control/GazeboSystem</plugin>
@@ -54,7 +54,7 @@
                 <state_interface name="position"/>
             </joint>
         </ros2_control>
-    </xacro:if>>
+    </xacro:if>
 
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
