@@ -4,23 +4,26 @@
     <joint name="camera_joint" type="fixed">
         <parent link="chassis"/>
         <child link="camera_link"/>
-        <origin xyz="0.276 0 0.181" rpy="0 0.18 0"/>
+        <origin xyz="0.223 0 0.08" rpy="0 0 0"/>
     </joint>
 
     <link name="camera_link">
         <visual>
+            <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
             <geometry>
-                <box size="0.010 0.03 0.03"/>
+                <box size="0.025 0.025 0.002"/>
             </geometry>
             <material name="black"/>
         </visual>
-        <visual>
-            <origin xyz="0 0 -0.05"/>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
             <geometry>
-                <cylinder radius="0.002" length="0.1"/>
+                <box size="0.025 0.025 0.002"/>
             </geometry>
-            <material name="black"/>
-        </visual>
+        </collision>
+        <xacro:inertial_box mass="0.05" x="0.025" y="0.025" z="0.002">
+            <origin  xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+        </xacro:inertial_box>
     </link>
 
 
