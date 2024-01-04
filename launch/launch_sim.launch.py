@@ -4,7 +4,7 @@ from ament_index_python.packages import get_package_share_directory
 
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
@@ -14,6 +14,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     package_name='prime_bot'
+    gazebo_world_file = os.path.join(get_package_share_directory(package_name), 'worlds', 'obstacles.world')
 
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -64,6 +65,7 @@ def generate_launch_description():
         rsp,
         joystick,
         twist_mux,
+        DeclareLaunchArgument('world', default_value=gazebo_world_file, description='Path to Gazebo world file'),
         gazebo,
         spawn_entity,
         diff_drive_spawner,

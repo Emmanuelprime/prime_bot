@@ -59,5 +59,5 @@ def generate_launch_description():
         params_declare,
         driver_node,
         tf2_node,
-        rviz2_node,
+        #rviz2_node,
     ])
