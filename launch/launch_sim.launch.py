@@ -14,7 +14,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     package_name='prime_bot'
-    gazebo_world_file = os.path.join(get_package_share_directory(package_name), 'worlds', 'obstacles.world')
+    gazebo_world_file = os.path.join(get_package_share_directory(package_name), 'worlds', 'turtle_world.world')
 
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
