@@ -14,7 +14,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     package_name='prime_bot'
-    gazebo_world_file = os.path.join(get_package_share_directory(package_name), 'worlds', 'turtle_world.world')
+    gazebo_world_file = os.path.join(get_package_share_directory(package_name), 'worlds', 'barrels.world')
 
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -46,8 +46,14 @@ def generate_launch_description():
              )
     spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                         arguments=['-topic', 'robot_description',
-                                   '-entity', 'pr'],
+                                   '-entity', 'prime'],
                         output='screen')
+    
+    spawn_entity1 = Node(package='gazebo_ros', executable='spawn_entity.py',
+                        arguments=['-topic', 'robot_description',
+                                   '-entity', 'prime1'],
+                        output='screen')
+
 
 
     diff_drive_spawner = Node(
@@ -65,9 +71,10 @@ def generate_launch_description():
         rsp,
         joystick,
         twist_mux,
-        DeclareLaunchArgument('world', default_value=gazebo_world_file, description='Path to Gazebo world file'),
+        # DeclareLaunchArgument('world', default_value=gazebo_world_file, description='Path to Gazebo world file'),
         gazebo,
         spawn_entity,
+        #  spawn_entity1,
         diff_drive_spawner,
         joint_broad_spawner
     ])
