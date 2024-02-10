@@ -4,10 +4,10 @@
     <xacro:include filename="inertial_macros.xacro"/>
 
 
-    <xacro:property name="chassis_length" value="0.225"/>
-    <xacro:property name="chassis_width" value="0.225"/>
-    <xacro:property name="chassis_height" value="0.10"/>
-    <xacro:property name="chassis_mass" value="1.0"/>
+    <xacro:property name="chassis_length" value="0.231"/>
+    <xacro:property name="chassis_width" value="0.262"/>
+    <xacro:property name="chassis_height" value="0.125"/>
+    <xacro:property name="chassis_mass" value="2.5"/>
     <xacro:property name="wheel_radius" value="0.0325"/>
     <xacro:property name="wheel_thickness" value="0.026"/>
     <xacro:property name="wheel_mass" value="0.1"/>
@@ -75,7 +75,7 @@
                 <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass="0.5" x="${chassis_length}" y="${chassis_width}" z="${chassis_height}">
+        <xacro:inertial_box mass="2.5" x="${chassis_length}" y="${chassis_width}" z="${chassis_height}">
             <origin xyz="${chassis_length/2} 0 ${chassis_height/2}" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>

@@ -25,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -98,13 +98,9 @@ Visualization Manager:
           Value: true
         chassis:
           Value: true
-        face_link:
-          Value: true
         laser_frame:
           Value: true
         left_wheel:
-          Value: true
-        map:
           Value: true
         odom:
           Value: true
@@ -116,25 +112,22 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        map:
-          odom:
-            base_link:
-              base_footprint:
-                {}
-              chassis:
-                camera_link:
-                  camera_link_optical:
-                    {}
-                caster_wheel:
+        odom:
+          base_link:
+            base_footprint:
+              {}
+            chassis:
+              camera_link:
+                camera_link_optical:
                   {}
-                face_link:
-                  {}
-                laser_frame:
-                  {}
-              left_wheel:
+              caster_wheel:
                 {}
-              right_wheel:
+              laser_frame:
                 {}
+            left_wheel:
+              {}
+            right_wheel:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -182,11 +175,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        face_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         laser_frame:
           Alpha: 1
           Show Axes: false
@@ -218,7 +206,7 @@ Visualization Manager:
       Name: Map
       Topic:
         Depth: 5
-        Durability Policy: Volatile
+        Durability Policy: Transient Local
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
@@ -319,7 +307,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 10.38051986694336
+      Distance: 3.4220356941223145
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -355,5 +343,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1255
-  X: 166
-  Y: 65
+  X: 197
+  Y: 106
