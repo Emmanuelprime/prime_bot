@@ -4,8 +4,8 @@
     <xacro:include filename="inertial_macros.xacro"/>
 
 
-    <xacro:property name="chassis_length" value="0.231"/>
-    <xacro:property name="chassis_width" value="0.262"/>
+    <xacro:property name="chassis_length" value="0.266"/>
+    <xacro:property name="chassis_width" value="0.238"/>
     <xacro:property name="chassis_height" value="0.125"/>
     <xacro:property name="chassis_mass" value="2.5"/>
     <xacro:property name="wheel_radius" value="0.0325"/>
